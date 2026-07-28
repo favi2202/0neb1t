@@ -1,6 +1,6 @@
 # CbS1 — Networking Basics Part 1
 
-Status: **In progress** (15%). Task 1 solution is prepared and independently verified; official GitLab placement is still pending.
+Status: **In progress** (15%). Task 1 is solved and verified. Tasks 2–4 are fully prepared but require the official image/environment and genuine packet captures.
 
 ## Scope
 
@@ -9,15 +9,23 @@ IPv4, OSI/TCP-IP, GNS3, Cisco IOS, Wireshark, ICMP, multicast, ARP
 ## Tasks
 
 1. Address calculations — solution prepared in `src/ip-1`
-2. GNS3 introduction — next
-3. Multicast requests
-4. ARP analysis
+2. GNS3 introduction — runbook prepared; execution pending
+3. Multicast requests — runbook prepared; packet verification pending
+4. ARP analysis — runbook prepared; packet verification pending
+
+## Preparation guides
+
+- [Task 2 — GNS3](preparation/TASK2-GNS3.md)
+- [Task 3 — Multicast](preparation/TASK3-MULTICAST.md)
+- [Task 4 — ARP](preparation/TASK4-ARP.md)
+- [Track-wide preparation-first workflow](../PREPARATION-FIRST-WORKFLOW.md)
 
 ## Expected deliverables
 
 - `src/ip-1`
 - GNS3 project containing the imported Cisco 3745 device
 - `multicast.pcap`
+- `multicast`
 - GNS3 project for the ARP lab
 - `arp.pcap`
 - `arp`
@@ -44,18 +52,6 @@ Exact filenames in the official task and assigned GitLab repository take precede
 
 The host formula is `2^h - 2`: one address is reserved for the network and one for broadcast.
 
-## Evidence checklist
+## Current next step
 
-- Initial input or configuration
-- Command, code, or configuration used
-- Expected and observed result
-- Exact filename and location
-- Independent verification
-- Short peer-review explanation
-- Final GitLab branch/remote check
-
-## Next action
-
-Prepare Task 2: confirm GNS3 and Wireshark are installed and that an authorized Cisco 3745 IOS image is available.
-
-Detailed learning notes, task procedures, troubleshooting, evidence guidance, and peer-review preparation are maintained in the matching Notion project page.
+No resource-dependent action is required now. When the official Cisco 3745 image and project repository become available, follow the Task 2 runbook and return the GNS3 screenshot or error output for verification.
