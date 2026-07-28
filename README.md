@@ -18,7 +18,7 @@ The official task text remains on the School 21 platform. This repository contai
 
 | Project | Topic | Status |
 |---|---|---|
-| CbS1 | Networking basics, addressing, GNS3, multicast, ARP | Reading |
+| CbS1 | Networking basics, addressing, GNS3, multicast, ARP | In progress (Task 1 prepared) |
 | CbS2 | Routing and application protocols | Reading |
 | CbS3 | VLAN, EtherChannel, OSPF, HSRP | Reading |
 | CbS4 | Traffic analysis and Scapy | Reading |
@@ -37,4 +37,4 @@ The official task text remains on the School 21 platform. This repository contai
 | CbS17 | Physical security | Reading |
 | CbS18 | Social engineering, OSINT, and hijacking detection | Reading |
 
-CbS1 is the first active project. Practical artifacts will be added only after they are produced and verified.
+CbS1 Task 1 is stored in `School-21-Cybersecurity/CbS01-networking-basics-1/src/ip-1`. Task 2 environment setup is next.
