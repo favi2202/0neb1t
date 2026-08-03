@@ -1,0 +1,14 @@
+CbS2 — Quest 3: DNS
+
+Question: What query type and class are visible in the DNS request?
+
+Answer:
+- Query type: A (Host Address, type 1)
+- Query class: IN (Internet, class 1)
+
+Capture evidence:
+- Request: frame 3, 10.10.10.2:56521 -> 10.10.10.1:53/UDP
+- Transaction ID: 0xD821
+- Query name: my.site
+- Response: frame 4, 10.10.10.1:53 -> 10.10.10.2:56521/UDP
+- Answer: my.site A 10.10.100.1, TTL 10 seconds

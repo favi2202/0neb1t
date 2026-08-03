@@ -1,0 +1,11 @@
+CbS2 — Quest 2: NTP
+
+1. OSI Layer 4 protocol and ports
+
+NTP uses UDP. In this capture, both the client request and server response use source port UDP/123 and destination port UDP/123.
+
+2. Transmit Timestamp in the first NTP packet
+
+First NTP packet: frame 81, NTP Version 3 client request, 10.10.10.2 -> 10.10.10.1.
+Transmit Timestamp: 2026-08-01 07:21:23.271987237 UTC.
+Raw NTP value: seconds 3994557683 (0xEE181CF3), fraction 1168176287 (0x45A0F49F).

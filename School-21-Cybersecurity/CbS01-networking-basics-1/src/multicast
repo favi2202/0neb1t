@@ -1,0 +1,11 @@
+Destination MAC address: 01:00:5e:01:01:01
+
+Explanation:
+The IPv4 multicast group used in the lab was 239.1.1.1. IPv4 multicast
+addresses are mapped to Ethernet MAC addresses using the 01:00:5e prefix
+and the lower 23 bits of the multicast IPv4 address. This produces
+01:00:5e:01:01:01.
+
+The value was confirmed in multicast.pcap. The capture contains five ICMP
+Echo Requests from 10.10.10.1 to 239.1.1.1 with Ethernet destination
+01:00:5e:01:01:01, followed by five ICMP Echo Replies from 10.10.10.2.
