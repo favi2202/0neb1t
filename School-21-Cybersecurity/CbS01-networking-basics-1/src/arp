@@ -1,0 +1,37 @@
+ARP capture analysis
+
+1. First ARP destination MAC address
+
+The first ARP Request was sent to ff:ff:ff:ff:ff:ff.
+This is the Ethernet broadcast address. R1 used broadcast because it knew
+R2's IPv4 address, 10.10.10.2, but did not yet know R2's MAC address.
+
+2. Request and response MAC observations
+
+In the ARP Request:
+- Sender: 10.10.10.1 / c4:01:53:7c:00:00
+- Target IP: 10.10.10.2
+- Target hardware address: 00:00:00:00:00:00
+
+The all-zero target hardware address means that the requested MAC address
+was still unknown.
+
+In the ARP Reply:
+- Sender: 10.10.10.2 / c4:02:36:58:00:00
+- Target: 10.10.10.1 / c4:01:53:7c:00:00
+
+The reply was unicast directly to R1. It informed R1 that 10.10.10.2 is
+reachable through MAC address c4:02:36:58:00:00. The ICMP Echo Requests and
+Replies that followed used these learned unicast MAC addresses.
+
+3. ARP spoofing logic
+
+ARP does not authenticate the IP-to-MAC information contained in replies.
+An attacker on the same local network may send forged ARP information that
+associates a trusted IPv4 address with an incorrect MAC address. If a host
+accepts and caches that false mapping, traffic may be redirected or disrupted.
+
+Defensive controls include Dynamic ARP Inspection, DHCP Snooping, monitoring
+unexpected IP-to-MAC changes, network segmentation, and end-to-end encryption.
+
+Evidence: arp.pcap, frames 10-11 for ARP and the following ICMP frames.
