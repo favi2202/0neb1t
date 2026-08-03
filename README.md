@@ -17,9 +17,9 @@ The official task text remains on the School 21 platform. Each project folder no
 
 | Project | Topic | Preparation status | Practical status |
 |---|---|---|---|
-| CbS1 | Addressing, GNS3, multicast, ARP | Complete | Task 1 solved; Tasks 2–4 execution pending |
-| CbS2 | Routing, NTP, DNS, DHCP, SSH | Complete | Execution pending |
-| CbS3 | VLAN, EtherChannel, OSPF, HSRP | Complete | Execution pending |
+| CbS1 | Addressing, GNS3, multicast, ARP | Complete | **Complete — all 4 tasks verified** |
+| CbS2 | Routing, NTP, DNS, DHCP, SSH | Complete | **Complete — all 5 tasks verified** |
+| CbS3 | VLAN, EtherChannel, OSPF, HSRP | Complete | **Next — detailed execution guide ready** |
 | CbS4 | Traffic analysis and Scapy | Complete | `main.py` prepared; captures pending |
 | CbS5 | Linux security | Complete | VM execution pending |
 | CbS6 | Windows security (optional) | Complete | Windows VM execution pending |
@@ -44,3 +44,8 @@ The official task text remains on the School 21 platform. Each project folder no
 - CbS9 `src/RSA_cracked.txt`: exact fifth-root RSA result independently verified.
 
 See [PREPARATION-FIRST-WORKFLOW.md](School-21-Cybersecurity/PREPARATION-FIRST-WORKFLOW.md) for the missing-input policy.
+
+
+## Work without an assistant
+
+Use [INDEPENDENT-EXECUTION-GUIDE.md](School-21-Cybersecurity/INDEPENDENT-EXECUTION-GUIDE.md) for the universal workflow, evidence template, troubleshooting loop, AI prompts, submission checks, and peer-review preparation. Every CbS3–CbS18 execution runbook now includes task-specific step-by-step instructions.
